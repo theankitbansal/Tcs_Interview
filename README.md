@@ -9,3 +9,135 @@ Encapsulation: As the name suggests, this means encapsulating different kinds of
 Inheritance: When a class inherits from another class, it shares the properties of the first class. For example, if we make a Student class, it inherits the class People as a student have all the properties of People like a student walks, talks, etc., and apart from it, the Student has its own properties like enrollment number, subjects, etc.
 Polymorphism:: The word “poly” means many and the rod “morph” means form. This means that polymorphism means showing many forms. Polymorphism can be run-time or compile-time. Examples of polymorphism are function overloading and function overriding.
 Yes, C++ is an Object-Oriented programming language as we can create classes and objects and C++ can implement all the 4 pillars of OOPS. However, C++ is not a purely object-oriented programming language. This is because a purely object-oriented programming language is such a language where all the functions are written inside a class and there are no primitive data types. Everything is an object in a pure object-oriented programming language.
+
+2. Write a program to swap two numbers. You cannot use a third variable and you cannot use the + (plus), - (minus),* (multiply),/ (divide) operators.
+
+The solution is using the XOR operator. Following is the C++ code for the same.
+
+C++ Program
+#include <algorithm>
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+void swap(int &x, int &y) {
+	x = x ^ y;
+	y = x ^ y;
+	x = x ^ y;
+}
+
+int main() {
+	// Your code goes here;
+	int x , y;
+	cin >> x >> y;
+	
+	cout<<"Before swapping, x = " << x <<" y = " << y<<"\n";
+	swap(x,y);
+	
+	cout<<"After swapping, x = " << x <<" y = " << y<<"\n";
+	
+	return 0;
+}
+
+Sample Input:
+10 20
+Sample Output:
+
+Before swapping, x = 10 y = 20
+After swapping, x = 20 y = 10
+
+3. Write a program to perform Binary Search on an array.
+
+The binary search algorithm is used to find an element in a sorted array. It is an optimized searching algorithm as the linear search scans all the elements of the array and the searching time for the linear search thus becomes O(N). However, the searching time of Binary Search is O(log2N). This is because in an average case, only log2N elements of an array are compared. We start by checking the middle element of the array. If the middle element of the array is our answer, we have found the element. If the number that we are searching for is greater than the middle element, it will be on the right half of the array as the array is sorted. So, apply binary search on the right half. If the number that we are searching for is smaller than the middle element of the array, we will apply the binary search on the left half of the array. Following is the C++ program for binary search.
+
+C++ Program for Binary Search
+
+#include <algorithm>
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int binary_search(int arr[], int n,int target) {
+	int lo = 0;
+	int hi = n-1;
+	
+	while(lo <= hi) {
+		int mid = lo + (hi-lo)/2;
+		
+		if(arr[mid] == target) return mid;
+		else if(arr[mid] < target) lo = mid + 1;
+		else hi = mid -1; 
+	}
+	
+	return -1;
+}
+
+int main() {
+	// Your code goes here;
+	int arr[] = {10,12,25,36,42,58,97};
+	if(binary_search(arr,7,12) == -1) {
+		cout<<"Element was not found";
+	} else {
+		cout<<"Element was found at index " << binary_search(arr,7,12);
+	}
+}
+
+Output: 
+
+Element was found at index 1
+
+4. Write a program to find whether a number is even or odd. You are not allowed to use any arithmetic operator i.e. plus (+), minus (-), multiply (*), divide(/), and modulus (%) are not allowed.
+
+An even number in binary form will always have its Least Significant Bit (LSB) = 0. So, if we take the XOR of this number with 1, the answer will become one greater than the number itself. This is because 0 XOR 1 is 1 so, LSB will become 1 from 0 i.e. increment in the value by 1. So, we can say that if a number (N) is an even number then, if N ^ 1 =  N + 1  else the number would be an odd number. So, the C++ program to solve the problem is given below.
+
+C++ Program
+
+#include <algorithm>
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+bool is_even(int N) {
+	if((N ^ 1) == N + 1) return true;
+	else return false;
+}
+
+int main() {
+	// Your code goes here;
+	int N;
+	cin>>N;
+	
+	if(is_even(N)) cout<<"The number is even";
+	else cout<<"The number is odd";
+}
+Sample Input (Even Number):
+
+10
+
+Output:
+
+The number is even
+
+Sample Input (Odd Number):
+
+9
+Output:
+
+The number is odd.
+
+5. What is fragmentation? What does Linked List have to do with it?
+
+We know that when we use arrays, we use sequential memory, i.e. the memory is used contiguously. Now, let us say that we have a large size array and we don’t have that much sequential memory. So, we won’t be able to store that data. Even if the memory is available, it is not available contiguously, but rather in fragments and we are not able to utilize this. This is called fragmentation.
+
+![image](https://user-images.githubusercontent.com/81725794/180912367-edb2a16d-084a-4213-88a2-778486fbb6e7.png)
+
+So, we can use a linked list to store the data as it does not require contiguous memory and thus solves the problem of fragmentation. In a linked list, data is stored in a node that also stores the pointer to the next node as the data is not contiguous and the next node can be present anywhere in the memory.
+
+![image](https://user-images.githubusercontent.com/81725794/180912398-44a03f60-8e19-4738-b92c-59d08a74d1a3.png)
+
+
+
+
