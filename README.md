@@ -159,6 +159,12 @@ No, we can’t override the private methods. The private methods are those metho
 
 9. List some comparisons and similarities between the Java and C++ programming languages.
 	
-	
+Java and C++ are both Object-Oriented Programming languages. However, everything in Java has to be inside a class, whereas this is not the case with C++. C++ has structures that are similar to classes but are used in Procedural Oriented Programming and not Object-Oriented Programming. Java does not have structures. Java has interfaces and C++ does not. Also, in C++, multiple inheritance is supported while it is not supported in Java. 
+
+C++ is fast as compared to Java because C++ is a compiled language, whereas Java is a hybrid language i.e. it is both compiled as well as interpreted. Also, Java uses JVM to run whereas C++ runs directly using the OS. Hence, Java is platform-independent whereas C++ is platform-dependent. 
+
+Java has Wrapper classes for each primitive data type. So, even though Java is not purely Object Oriented, it is possible to write a pure Object-Oriented Program in Java whereas it is not possible to do so in C++.
+
+10. What is DOM?	
 
 
