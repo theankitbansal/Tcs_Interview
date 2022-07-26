@@ -185,3 +185,43 @@ Size of page = Size of frame
 	
 14. What is TCP/IP Protocol?
 	
+TCP stands for Transfer Control Protocol. The TCP is a connection-oriented protocol implemented at the Transport Layer of the OSI Model. TCP is responsible for breaking the data into the form of small frames called framing and later, at the receiver end, it also reassembles the frames back into the sequence to get the data back. 
+
+IP stands for Internet Protocol. It is present at the Network Layer of the OSI model. IP is not reliable and it is a connectionless model. IP is responsible for sending and receiving the data that is broken into the form of frames by the TCP. The IP is combined with TCP to form a reliable data sending-receiving Protocol.
+
+15. Write an SQL query to print the current date.
+	
+The SQL Query to print the current date is: GetDate()
+
+16. Write an SQL Query to select all those entries from the table STUDENTS, whose name is “Rahul”.
+The SQL Query to do so is
+	
+SELECT * FROM STUDENTS WHERE NAME = “Rahul”
+	
+17. What do you know about DCL?
+
+DCL means Data Control Language. DCL is responsible for managing the access and permissions to a DBMS. DCL helps in deciding which part of the Database should be accessed by which user. The 2 major commands in DCL are :
+
+GRANT: This command is used to grant privileges to the Objects of the database for a user. It helps one user to grant certain permissions to the other users.
+REVOKE: This command is used to withdraw the privileges for the objects of the database that have been granted to a user.
+	
+18. Can constructors be overridden?
+	
+No, constructors are not overridden. The sub-class constructors have to call the super-class constructor for their creation as they inherit from the super-class. Hence, the constructors cannot be overridden.
+
+19. Do you know why the main() method is static in Java?
+	
+The main() method, like every other method in Java, is also inside a class. Now, when we compile or run the Java program, we do not create an object of the class containing the main() method. So, we have to make sure that the main() method can be accessed without creating an object of the main() class. Hence, the main() method is static because the static methods belong to the class and not to a particular object.
+
+20. Write a program to print the right-angled triangle pattern as shown below for any value of N input by the user.
+For N = 5
+
+*
+**
+***
+****
+*****
+Let us observe the pattern carefully. We can see that in the 1st row, there is only 1 star and in the second row, there are 2 stars, and so on. This means that in the ith row, we are printing i number of stars. Following is the C++ program for the same.
+
+C++ Program	
+	
