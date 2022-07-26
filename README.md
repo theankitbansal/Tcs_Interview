@@ -225,3 +225,22 @@ Let us observe the pattern carefully. We can see that in the 1st row, there is o
 
 C++ Program	
 	
+#include <algorithm>
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+
+int main() {
+	// Your code goes here;
+	int N;
+	cin>>N;
+	
+	for(int i=1;i<=N;i++) {
+		for(int j=1;j<=i;j++) {
+			cout<<"*";
+		}
+		cout<<"\n";
+	}
+}
