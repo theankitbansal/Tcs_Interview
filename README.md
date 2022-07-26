@@ -167,4 +167,21 @@ Java has Wrapper classes for each primitive data type. So, even though Java is n
 
 10. What is DOM?	
 
+DOM stands for Document Object Model. It is an API (Application Programming Interface) that is used to access and change the contents of HTML elements. It provides a hierarchical structure of the web page that makes it easy to access the elements, their parents, their siblings and their children.
 
+11. Difference between Process and Thread.
+	
+	![Screenshot (960)](https://user-images.githubusercontent.com/81725794/180912840-e525dbec-71e6-494d-b55c-ac6bf21f49b1.png)
+
+12. Difference between user-level thread and kernel-level thread.
+	
+	![Screenshot (960](https://user-images.githubusercontent.com/81725794/180912907-c88bb7f1-e8f3-4f22-a7cd-0d276a4d52f6.png)
+
+13. What is the relation between the pages and frames in the OS?
+	
+In OS, paging is the method of dividing each process into small segments called pages and the main memory is also divided into the frames so that each frame can accommodate one data page. Hence, the relation between pages and frames is
+	
+Size of page = Size of frame
+	
+14. What is TCP/IP Protocol?
+	
