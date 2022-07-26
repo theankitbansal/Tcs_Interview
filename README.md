@@ -138,6 +138,27 @@ So, we can use a linked list to store the data as it does not require contiguous
 
 ![image](https://user-images.githubusercontent.com/81725794/180912398-44a03f60-8e19-4738-b92c-59d08a74d1a3.png)
 
+6. List some linear and some non-linear data structures.
+	
+Linear Data structures: Arrays, Linked Lists, Stacks, Queues, and Dequeues, are all linear data structures.
+Non-Linear Data structures: The non-linear data structures can further be categorized as circular and non-circular. Some circular data structures are Circular Queue, Circular Dequeue, Circular Linked List, etc. Some non-circular data structures are Trees, Graphs, Priority queues, etc.
+	
+7. List some major roles performed by an Operating System.
+	
+An operating system performs various roles. Some of the examples are as follows:
 
+Resource Governor: The OS acts as a resource governor so that there is no load on the system. It allocates and deallocates the resources to the processes and also handles the synchronization of these resources among various processes.
+Process Management: OS uses various Scheduling algorithms to manage the processes and their execution. This is done to increase the efficiency of the CPU so that it is never idle and the processes keep on executing.
+Storage Management: OS acts as a storage manager bus using its File System. The data of the user is stored in the form of files and directories.
+Memory Management: Memory management and storage management are confused with each other. However, the storage management concerns the file system and storage of the data in the Computer, the memory management means managing the memory allocation to the processes at the time of execution. Which process should be kept in the Ready Queue, which is in the Waiting Queue (both these queues are inside RAM only).
+Privacy and Security: Privacy and security from any threats or viruses are also the responsibility of the OS. However, inter-process security is also the responsibility of the OS.
+	
+8. Can we override the private methods?
+	
+No, we can’t override the private methods. The private methods are those methods that have a scope only within the same class. Since they cannot be accessed outside the class even by a sub-class, there is no way to override the private methods.
+
+9. List some comparisons and similarities between the Java and C++ programming languages.
+	
+	
 
 
